@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import './App.css'
+import './App.css';
+import Player from './component/player.jsx';
 
 function App() {
 return (
   <main>
-    <ol>
-      <li><span className='player-name'>Player1</span>
-      <span className='Player-symbol'>X</span></li>
-      <li><span className='player-name'>Player2</span>
-      <span className='Player-symbol'>O</span></li>
+    <div id='game-container'>
+    <ol id='players'>
+    <Player initialName="player 1" symbol="X" />
+    <Player initialName="player 2" symbol="O" />
     </ol>
-
+    GAME  BOARD
+    </div>
+    LOG
   </main>
 )
 }
